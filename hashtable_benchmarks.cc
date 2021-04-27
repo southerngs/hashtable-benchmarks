@@ -31,7 +31,7 @@
 #include "absl/container/node_hash_set.h"
 #include "boost/preprocessor.hpp"
 #include "google/dense_hash_set"
-#include "folly/container/F14Set.h"
+//#include "folly/container/F14Set.h"
 
 #if defined(__GNUC__) || defined(__clang__)
 #define HT_BENCH_FLATTEN __attribute__((__flatten__))
@@ -964,7 +964,7 @@ void ConfigureBenchmark(benchmark::internal::Benchmark* b) {
   (google::dense_hash_set) \
   (absl::flat_hash_set)    \
   (absl::node_hash_set)    \
-  (folly::F14ValueSet)     \
+//  (folly::F14ValueSet)     \
   (folly::F14NodeSet)      \
   (folly::F14VectorSet)
 // clang-format on
